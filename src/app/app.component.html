@@ -1,0 +1,23 @@
+<div class="form-area">
+
+  <h1>Blog post</h1>
+  <br><br>
+
+  <input type="text" placeholder="Blog-Title"[(ngModel)]="blogTitle">
+  <br><br>
+
+  <textarea cols="30" rows="10" placeholder="Blog-Details"[(ngModel)]="blogdetails"></textarea>
+  <br><br>
+
+  <input type="text" placeholder="Blog Image URL"[(ngModel)]="imageURL">
+  <br><br>
+
+  <input type="text" placeholder="blog URL"[(ngModel)]="blogURL">
+</div>
+
+<div>
+<h1>{{blogTitle}}</h1>
+<p>{{blogdetails}}</p>
+<img [src]="imageURL" alt="pic">
+<a [href]="blogURL">show details</a>
+</div>
